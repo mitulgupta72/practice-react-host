@@ -1,0 +1,5 @@
+./dis 
+./node_modeules
+./parcel-catch
+.parcel-cache/
+node_modules/

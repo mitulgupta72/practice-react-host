@@ -1,0 +1,31 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "learning rect from scratch ",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "_comment": {
+    "specifier": "Allows Updates To           Example (4.17.0)         Explanation",
+    "~": "Patch versions only         4.17.1, 4.17.5           Stays within 4.17.x.",
+    "^": "Minor & patch versions      4.18.0, 4.19.3           Stays within 4.x.x."
+  },
+  "example": {
+    "tilde": "~4.17.0",
+    "caret": "^4.17.0"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
