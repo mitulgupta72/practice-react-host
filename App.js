@@ -86,7 +86,11 @@ const HeaderComponent=()=>{
 
       {/* and for integrating functiona components  OR  */}
       {/* for component composition we can do like */}
+      {/* we also call it COMPONENT COMPOSITION */}
       <Title/>
+      {/* this is a normal java script function so you can also call it like a normala js function also
+       */}
+       {Title()}
       <h1>namste from funcitonal component       </h1>
       <h2> h2 in functional component</h2>
     </div>

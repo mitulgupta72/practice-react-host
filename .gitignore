@@ -1,4 +1,5 @@
-./dis 
+dist/
+./dist
 ./node_modeules
 ./parcel-catch
 .parcel-cache/
