@@ -4,6 +4,8 @@ import ReactDOM from "react-dom/client";
 import React, { useState } from "react";
 
 const Body = () => {
+  // if we use normal variables here like js and it changes react will not be able to tract it that it chnaged and render the changed vlaue of var in ui but if we use state var useState react can detect if its changed so it will also render it in ui
+  // like we use normal variables in js in react we use state variables for two way binding
   const [serchText, setSerchText] = useState("");
   const [restaurantData, setRestaurantData] = useState(restaurants);
 
