@@ -1,3 +1,10 @@
+import React, { useState } from "react";
+
+// const authenticatedUser=()=>{
+//   // suppose we are making an api call to check it authenticated 
+//   return true;
+// }
+
 export const Title = () => (
     <img
       className="logo"
@@ -7,6 +14,7 @@ export const Title = () => (
   );
 
 export const Header = () => {
+  const [isLoggedIn,setIsLoggedIn]=useState(false);
     return (
       <div className="header">
         <Title />
@@ -19,6 +27,21 @@ export const Header = () => {
             <li>cart</li>
           </ul>
         </div>
+        {
+          // inside react you cant just run javascript statements 
+          // for example 
+          // var a=10;
+          // console.log(a);
+          // above this will not work
+          
+          // But jut by making it an expression it will work
+          // ((var a=10),console.log(a))
+          // At the end of the day we can run any js inside react but not statement just expression
+        }
+
+        {isLoggedIn?(<button onClick={()=>setIsLoggedIn(false)}>logout</button>):(<button onClick={()=>setIsLoggedIn(true)}>Login</button>)}
+        {/* <button>Login</button>
+        <button>logout</button> */}
       </div>
     );
   };
